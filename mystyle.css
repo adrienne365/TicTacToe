@@ -1,0 +1,128 @@
+.wrapper { 
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+h1 {
+  text-align: center;
+  font-size: 50pt;
+}
+
+.rematchButton {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#rematchButton {
+  background-color: rgb(185, 156, 11);
+  color: black;
+  margin-left: 25px;
+  margin-right: 25px;
+  height: 50px;
+  width: 120px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 14pt;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+              rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+              rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+              rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+              rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#rematchButton:hover {
+  background-color: black;
+  color: rgb(185, 156, 11);
+}
+
+#gameStatus {
+  border: 3px dotted black;
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color:black;
+  font-size: 20pt;
+  padding-top: 15px;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    height: 360px;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+ }
+
+input::placeholder {
+  color: #2a2b2b;
+  opacity: 1;
+}
+
+ #playerName {
+  height: 30px;
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 10px;
+  background-color:  rgb(185, 156, 11);
+  border: black solid 2px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ .cell {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+ }
+
+.cell:nth-child(3n+2) {
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+ }
+
+.cell:nth-child(n+4):nth-child(-n+6) {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+ }
