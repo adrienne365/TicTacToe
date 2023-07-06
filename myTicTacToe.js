@@ -70,7 +70,6 @@ function startPlay() {
     gameStatus.innerText = "Let's Play!"
     gameActive = true;
     gameState = [null, null, null, null, null, null, null, null, null];
-    console.log(gameState)
   }
 
   startPlay()
